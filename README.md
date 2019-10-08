@@ -1,5 +1,5 @@
 # Refugees Welcome
-Refugees welcome is a web application that through its practical implementation, demonstrates the basic technologies, tools and processes that are necessary to successfully build a website.
+      Refugees welcome is a web application that through its practical implementation, demonstrates the basic technologies, tools and processes that are necessary to successfully build a website.
 
 Special emphasis will be placed on the client / server model of architecture, through which all frontend and backend technologies will be presented.
 
