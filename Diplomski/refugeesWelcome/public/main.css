@@ -1,0 +1,77 @@
+#page{
+    background-color:white;
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 0px;    /* if you want it vertically middle of the navbar. */
+}
+.iframe-container{
+    overflow:hidden;
+
+	height:480px;
+	position: relative;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed{
+    top:0;
+	left:0;
+	width:100%;
+	position:absolute;
+}
+#naslov{
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    font-style: normal;
+}
+#title{
+    text-align: center;
+}
+
+nav.nav-center{margin:0;float:none} 
+.navbar-inner{ text-align:center} 
+
+.row{
+        text-align: center;
+}
+
+h1 { 
+    text-align: center;
+    display: block;
+    font-size: 30em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 100px;
+    margin-right: 0;
+    font-weight: bold;
+    text-decoration-color: azure;
+  }
+h2{
+    text-align: center;
+}
+
+#la{
+    font-size: large;
+}
+p{
+    text-align: justify;
+    color: black;
+}
+#nas{
+    margin-top: 240px;
+    text-align: justify;
+    font-size: 4em;
+    color: blue;
+}
+
+.kontakt{
+    text-align: justify;
+    font-size: 1.5em;
+    color: blue;
+}

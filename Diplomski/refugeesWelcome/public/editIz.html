@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Refugees Welcome</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="AjaxIz.js"></script>
+  <script src="signUp.js"></script>
+</head>
+<body id="page"
+>
+    
+        <div class="container-fluid">
+            <div class="row">
+                
+            <header class="nav navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <br>
+                        <a class="navbar-brand" href="#">REFUGEES WELCOME</a>
+                        <img class="logo" src="rw.png">
+                  </div>
+ 
+                  <ul class="nav navbar-nav" style="position: -ms-page">
+                    <br>
+                    <li ><a href="/naslovna">Naslovna</a></li>
+                    <li><a href="/koncept">Koncept</a></li>
+                    <li><a href="/zemlje">Zemlje</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                    <li><a href="/donacije">DONACIJE</a></li>
+                      </ul>
+                 
+                
+                  <ul class="nav navbar-nav navbar-right">
+                    <br>
+                    <li><a href="/profilIz"><span class="glyphicon glyphicon-user"></span>Profil</a></li>
+                    <li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                  </ul>
+                </div>
+                <br>
+            </header>
+        <hr>
+            <div class="container bootstrap snippet">
+                    <div class="row">
+                         
+                    <div class="row">
+                          <div class="col-sm-3"><!--left col-->
+                              
+                
+                      <div class="text-center">
+                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                        <h6>Učitaj fotografiju</h6>
+                        <input type="file" class="text-center center-block file-upload">
+                      </div></hr><br>
+                          
+                        </div><!--/col-3-->
+                        <div class="col-sm-9">
+                            <ul class="nav nav-tabs">
+                                <li><a href="/profilIz"  >Home</a></li>
+                                <li class="active"><a href="#edit" >Edit</a></li>
+                                <li><a  href="/azil">Zahtjev za azil</a></li>
+                              </ul>
+                
+                              
+                             </div><!--/tab-pane-->
+                             <div class="tab-pane" id="edit">
+                               
+                               <h2></h2>
+                               
+                               <hr>
+                                  <form class="form" action="http://localhost:3000/editIz"   method="post"  id="registrationForm">
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label for="first_name"><h4>Ime</h4></label>
+                                              <input type="text" class="form-control" name="ime" id="first_name" placeholder="Ime" title="enter your first name if any.">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                            <label for="last_name"><h4>Prezime</h4></label>
+                                              <input type="text" class="form-control" name="prezime" id="last_name" placeholder="Prezime" title="enter your last name if any.">
+                                          </div>
+                                      </div>
+                          
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label ><h4>JMBG</h4></label>
+                                              <input type="text" class="form-control"  id="jmbgEdit" name="jmbg" placeholder="JMBG" title="enter your phone number if any.">
+                                          </div>
+                                      </div>
+                          
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label ><h4>Trenutna adresa</h4></label>
+                                              <input class="form-control"  id="adresaEdit" name="adresa" placeholder="Trenutna adresa">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label ><h4>Datum rodjenja</h4></label>
+                                              <input class="form-control" id="datumEdit" name="datumRodj" placeholder="MM/DD/YYYY">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                              <label><h4>Mjesto rođenja</h4></label>
+                                              <input class="form-control" name="mjestoRodj" id="mjestoEdit" placeholder="Mjesto rođenja" >
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                          <div class="col-xs-6">
+                                            <label><h4>Državljanstvo</h4></label>
+                                              <input class="form-control" name="drzavljanstvo" id="drzavljanstvoEdit" placeholder="Drzavljanstvo" >
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          
+                                            <div class="col-xs-6">
+                                              <label><h4>Broj telefona</h4></label>
+                                                <input class="form-control"  id="brojEdit" name="brojTel" placeholder="Broj telefona 0xx-xxx-xxx" >
+                                            </div>
+                                        </div>
+                                      <div class="form-group">
+                                           <div class="col-xs-12">
+                                                <br>
+                                                  <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
+                                                   <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                                   <br><br><br>
+                                            </div>
+                                      </div>
+                                  </form>
+                             </div>
+
+                       
+                               
+                          </div><!--/tab-content-->
+                
+                        </div><!--/col-9-->
+                    </div><!--/row-->
+            </div>
+        </div>
+                    </div>    </div>
+        <footer id="footer" class="container-fluid">
+            <div class="row">
+              <div class="nav navbar-inverse">
+                <ul class="nav navbar-nav">
+                  <li><br><h3 id="title">REFUGEES WELCOME je projekat koji je uradila Nudžejma Pozder u okviru svog Završnog rada. All rights reserved.</h3></li>
+                  <br><br>
+                </ul>
+              </div>
+            </div>
+        </footer>
+      </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+html,body{
+    background-image: url('signUp.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: 'Numans', sans-serif;
+}
+    
+    .container{
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: left;
+}
+
+    .card-header h1{
+        color: white;
+        text-align: center;
+}
+    
+    .card{
+   
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 800px;
+    background-color: rgba(87, 107, 148, 0.5) !important;
+    }
+
+    .card-footer h4{
+        text-align: center;
+    }
+
+    .logo {
+        float: left;
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+        margin-top: 0px;    /* if you want it vertically middle of the navbar. */
+    }
+    

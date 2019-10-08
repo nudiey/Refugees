@@ -1,0 +1,142 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="signUp.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="signUp.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+                                <img class="logo" src="rw.png">
+                                <h1>Regristracijska forma</h1>
+			</div>
+			        <div class="card-body">
+                                        <iframe name="hiddenFrame" width="0" height="0" style="display: none;"></iframe>
+				        <form action="http://localhost:3000/registracija" method="POST" target="hiddenFrame" >
+                                                <h5 class="card-title" style="color: white;">Licni podaci</h5>
+                                        <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                        <input id="ime" name="ime" class="form-control" style="float: left;" placeholder="Ime">
+                                       
+                                                 </div>
+                                                <div class="col-sm-6">
+                                                        <input id="prezime"  name="prezime" class="form-control" style="float: left;" placeholder="Prezime">
+                                        
+                                                </div>
+                                        </div>
+                        <div class="form-group row">
+                                <div class="col-sm-12">
+                                        <input id="username"  name="username" class="form-control" style="float: left;" placeholder="Username">
+                                </div>
+                        </div>
+                        <div class="form-group row">
+                                <div class="col-sm-12">
+                                        <input id="pw"  name="password" class="form-control" style="float: left;" type="password"  placeholder="Password">
+                                </div>
+                        </div>
+                        <div class="form-group row">
+                                        <h5 class="card-title" style="margin-left: 20px; color: white;">Spol:         </h5>
+                                        <div class="col-sm-4">
+                                                <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="spol" id="exampleRadios1" value="musko" checked>
+                                                        <label class="form-check-label" for="exampleRadios1" style="color: white;">
+                                                            Musko
+                                                        </label>
+                                                      </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="spol" id="exampleRadios1" value="zensko" checked>
+                                                        <label class="form-check-label" for="exampleRadios1" style="color: white;">
+                                                            Zensko
+                                                        </label>
+                                                      </div>
+                                        </div>
+                                </div>
+                        
+                        <div class="form-group row">
+                            <h5 class="card-title" style="margin-left: 20px;  color: white;">Prijavljujem se kao:         </h5>
+                        <div class="col-sm-4">
+                                <button type="submit"   id="grad" onclick="Validiraj(this)" id="CheckOne" class="btn btn-outline-primary">Gradjanin</button>
+                                <button type="submit"   id="iz" onclick="Validiraj(this)" id="CheckTwo" class="btn btn-outline-primary">Izbjeglica</button>   
+                        </div>
+                        </div> 
+		</form>
+                <form id="gradjanin" style="visibility: hidden;"action="http://localhost:3000/reg" method="POST">
+                        <div class="form-group row">
+                                <div class="col-sm-12">
+                                        <input id="email"  name="email" class="form-control" style="float: left;" placeholder="Email">
+                                </div>
+                        </div>
+                        <div class="form-group row">
+                                <div class="col-sm-12">
+                                        <input id="broj"   name="brojTelefona" class="form-control" style="float: left;" placeholder="Broj telefona: 0xx-xxx-xxx">
+                                </div>
+                        </div>
+                        <div class="form-group row" style="align-content: center;">
+                                        <div class="col-md-2 col-xs-2 col1 center-block"> 
+                                        <button id="regGr" onclick="ValidirajGr()" type="submit" class="btn btn-primary center-block" >Registruj se</button>
+                                        <a id="otvori" href="C:\Users\nudie\OneDrive\Desktop\Diplomski\refugeesWelcome\public\profilGr.html"></a>
+                                </div>
+                        </div>
+                        
+                </form>
+
+                <form id="izbjeglica" style="visibility: hidden;" action="http://localhost:3000/izbjeglica" method="POST">
+                        <div class="form-group row">
+                                <div class="col-sm-12">
+                                        <br>
+                                        <input id="adresa" name="adresa" class="form-control" style="float: left;" placeholder="Trenutna adresa prebivalista">
+                                </div>
+                            <div class="col-sm-12">
+                                <br>
+                                <input id="date" name="datumRodjenja" class="form-control" style="float: left;" placeholder="Datum rodjenja: DD/MM/YYYY">
+                            </div>
+                            <div class="col-sm-12">
+                                    <br>
+                                    <input id="mjestoRodj" name="mjestoRodjenja" class="form-control" style="float: left;" placeholder="Mjesto rodjenja">
+                            </div>
+                            <div class="col-sm-12">
+                                <br>
+                                <input id="drzavljanstvo"  name="drzavljanstvo" class="form-control" style="float: left;" placeholder="Drzavljanstvo">
+                        </div>
+                        <div class="col-sm-12">
+                                 <br>
+                                <input id="jmbg" name="jmbg" class="form-control" style="float: left;" placeholder="JMBG">
+                        </div>
+                        <div class="col-sm-12">
+                                <br>
+                                <input id="broj1" name="brojTelefona" class="form-control" style="float: left;" placeholder="Broj telefona: 0xx-xxx-xxx">
+                                <br><br><br><br><br><br>
+                        </div>
+                                
+                        </div>
+                        <div class="form-group row" style="align-content: center;">
+                                        <div class="col-md-2 col-xs-2 col1 center-block"> 
+                                       <button type="submit" onclick="ValidirajIz()"   class="btn btn-primary center-block" >Registruj se</button>
+                                       <a  id="otvoriIz" href="C:\Users\nudie\OneDrive\Desktop\Diplomski\refugeesWelcome\public\profilIz.html"></a>
+                                </div>
+                        </div>
+                       
+                       
+                </form>
+  
+                        </div>
+			<div class="card-footer">
+				<h4>Refugees welcome</h4>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

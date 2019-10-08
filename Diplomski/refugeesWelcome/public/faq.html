@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Refugees Welcome</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body >
+    
+        <div class="container-fluid">
+            <div class="row">
+                
+            <header class="nav navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <br>
+                        <a class="navbar-brand" href="#">REFUGEES WELCOME</a>
+                        <img class="logo" src="rw.png">
+                  </div>
+ 
+                  <ul class="nav navbar-nav" style="position: -ms-page">
+                    <br>
+                    <li ><a href="/naslovna">Naslovna</a></li>
+                    <li><a href="/koncept">Koncept</a></li>
+                    <li><a href="/zemlje">Zemlje</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                    <li><a href="/donacije">DONACIJE</a></li>
+                      </ul>
+                 
+                
+                  <ul class="nav navbar-nav navbar-right">
+                    <br>
+                    <li><a href="/profil/:un/:pw/:ime/:prezime/:spol/:email/:brojTelefona"><span class="glyphicon glyphicon-user"></span> Profil</a></li>
+                    <li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                  </ul>
+                </div>
+                <br>
+            </header>
+
+            
+        <div class="container-fluid" style="background-color: white">
+            <div class="row">
+                <br><br><br>
+                    <p id="naslov">Frequently Asked Questions</p>
+                    <br><br>
+            </div>
+            <div class="row">
+                    <div class="col-sm-4">
+                            <div class="col-sm-2">
+                                    <img  src="question.png"  style="border-radius: 50%;">
+                                    </div>
+                                <div class="col-sm-8">
+                                        <a id="pokazi" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align:center;">Ko se može registrovati?</h4></a>
+                                       <p id="pok" style="visibility: hidden; text-align: justify;">Poželjno je da se registruju samo izbjeglice kojima treba smještaj, 
+                                        ali naravno sve registracije će biti provjerene.</p><br>
+                                       <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                                </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <div class="col-sm-2">
+                                    <img  src="question.png"  style="border-radius: 50%;">
+                                    </div>
+                                <div class="col-sm-8">
+                                        <a  id="pokazi1" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align:center;">Da li moramo snositi troškove?</h4></a>
+                                       <p id="pok1" style="visibility: hidden; text-align: justify;">Generalno, izbjeglice same snose troškove,
+                                    ali u ovom slučaju, troškove smještaja snosi vlada.</p><br>
+                                       <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                                       </div>
+                    </div> 
+                    <div class="col-sm-4">
+                        <div class="col-sm-2">
+                                <img  src="question.png"  style="border-radius: 50%;">
+                                </div>
+                            <div class="col-sm-8">
+                                    <a  id="pokazi2" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align: center;">Da li moramo plaćati kiriju?</h4></a>
+                                   <p id="pok2" style="visibility: hidden; text-align: justify;">Izbjeglice nisu dužne snositi troškove stanovanja, dok 
+                                troškove sopstvene prehrane jesu.</p>
+                                   <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                            </div>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-sm-4">
+                            <div class="col-sm-2">
+                                    <img  src="question.png"  style="border-radius: 50%;">
+                                    </div>
+                                <div class="col-sm-8">
+                                        <a  id="pokazi2" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align: center;">Ko sve može koristiti aplikaciju?</h4></a>
+                                       <p id="pok2" style="visibility: hidden; text-align: justify;">Sve osobe mogu koristiti istu. Građani mogu da doniraju preko nje, a izbjeglice da traže smještaj.</p>
+                                       <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                                </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                            <div class="col-sm-2">
+                                    <img  src="question.png"  style="border-radius: 50%;">
+                                    </div>
+                                <div class="col-sm-8">
+                                        <a  id="pokazi3" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align: center;">Koliko dugo možemo boraviti u alternativnom smještaju?</h4></a>
+                                       <p id="pok3" style="visibility: hidden; text-align: justify;">Sve dok se svojevoljno ne odlučite da napustite zemlju,ili 
+                                    bude uočeno uništavanje privatne imovine u smještaju koji Vam je omogućen, ili se ne donese neka druga odluka o Vašem boravku u zemlji.</p>
+                                       <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                                </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="col-sm-2">
+                                <img  src="question.png"  style="border-radius: 50%;">
+                                </div>
+                            <div class="col-sm-8">
+                                    <a  id="pokazi4" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align: cemter;">Koliko često će se vršiti kontrola smještaja?</h4></a>
+                                   <p id="pok4" style="visibility: hidden; text-align: justify;">Mjesečno jedanput.</p><br>
+                                   <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                            </div>
+                </div>
+                </div> 
+
+                    <div class="row">
+                            <div class="col-sm-4">
+                                    <div class="col-sm-2">
+                                            <img  src="question.png"  style="border-radius: 50%;">
+                                            </div>
+                                        <div class="col-sm-8">
+                                                <a  id="pokazi5" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align: center;">Šta možemo uraditi ako imamo prostor koji možemo izdavati izbjeglicama?</h4></a>
+                                                <p id="pok5" style="visibility: hidden; text-align: justify;">Nazovite nas broj koji se nalazi u
+                                                     kontakt podacima</p><br>
+
+                                        </div> 
+                                </div>
+                                <div class="col-sm-4">
+                                        <div class="col-sm-2">
+                                                <img  src="question.png"  style="border-radius: 50%;">
+                                                </div>
+                                            <div class="col-sm-8">
+                                                    <a  id="pokazi6" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align:center;">Kako možemo zauvijek ostati u zemlji?</h4></a>
+                                                   <p id="pok6" style="visibility: hidden; text-align: justify;">Dobijanje vaše trajne boravišne dozvole ne razmatramo mi. Naš osnovni cilj
+                                                je da dobijete privremeni smještaj.</p><br>
+                                                   <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                                            </div>
+                                </div>
+                                <div class="col-sm-4"> 
+                                        <div class="col-sm-2">
+                                                <img  src="question.png"  style="border-radius: 50%;">
+                                                </div>
+                                            <div class="col-sm-8">
+                                                    <a  id="pokazi7" onclick="odgovori(this)" class="stretched-link"> <h4 style="text-align: center;">Šta će se desiti ukoliko ne budemo očuvali smještaj u prvobitnom izgledu?</h4></a>
+                                                   <p id="pok7" style="visibility: hidden; text-align: justify;">Ostati ćete bez istog i
+                                                     nećete imati mogućnost do dobijete neki drugi, bar ne od strane nas.</p><br>
+                                                   <!--js ovdje ide da se pokaze p, kad se klikne na link-->
+                                                   </div>
+                                </div>
+                                </div>
+                            
+                        </div>
+                                    
+            </div>
+            <form>
+                <div class="form-group"> <!-- JS OVDJE URADITI !-->
+                        <label class="control-label " for="message_id">Postavi pitanje</label>
+                        <textarea class="form-control" id="message_id" name="message" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group"> <!-- JS OVDJE URADITI !-->
+                        <button class="btn btn-primary " name="submit" type="submit">Pošalji</button>
+                </div>
+        </form>
+          
+        </div>
+
+        <footer id="footer" class="container-fluid">
+            <div class="row">
+              <div class="nav navbar-inverse">
+                <ul class="nav navbar-nav"> 
+                  <li><br><h3 id="title">REFUGEES WELCOME je projekat koji je uradila Nudžejma Pozder u okviru svog Završnog rada. All rights reserved.</h3></li>
+                  <br><br>
+                </ul>
+              </div>
+            </div>
+        </footer>
+      </div>
+</div>
+<script src="faq.js"></script>
+</body>
+</html>

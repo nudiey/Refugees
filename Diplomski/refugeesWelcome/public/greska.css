@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+
+background-image: url('greska.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(180, 104, 98, 0.5) !important;
+}
+
+
+
+.card-header h3{
+    color: rgba(39, 6, 3, 0.5);
+}
+
+#button{
+    align-content: center;
+}
+
+
+
+.logo {
+    float: left;
+    width: 50px;
+    height: 70px;
+    margin-right: 20px;
+    margin-top: 0px;    /* if you want it vertically middle of the navbar. */
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: rgb(45, 45, 95);
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
